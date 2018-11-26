@@ -33,8 +33,8 @@ module.exports = class extends Generator {
 	writting() {
 		// fs.mkdirSync('dist')
 		this.fs.copy(this.templatePath('src'), this.destinationPath());
-		this.fs.copyTpl(this.templatePath('src/babelrc.tpl'), this.destinationPath('.babelrc'));
-		this.fs.copyTpl(this.templatePath('src/gitignore.tpl'), this.destinationPath('.gitignore'));
+		this.fs.copyTpl(this.templatePath('babelrc.tpl'), this.destinationPath('.babelrc'));
+		this.fs.copyTpl(this.templatePath('gitignore.tpl'), this.destinationPath('.gitignore'));
 	}
 
 	install() {
