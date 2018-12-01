@@ -39,7 +39,7 @@ module.exports = class extends Generator {
 
 	install() {
 	    // 安装 package 安装.
-	    this.installDependencies({ bower: false });
+	    this.installDependencies({ bower: false, npm: false, yarn: true });
 	  }
 
 };
